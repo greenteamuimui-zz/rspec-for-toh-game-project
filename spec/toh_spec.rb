@@ -26,7 +26,7 @@ describe TOH do
         game1 = TOH.new
         game1.tower = [[3,2],[],[1]]
         game1
-      end
+    end
       context 'when the pile that is being drawn from is empty' do
         it "should raise error that indicates the pile is empty" do
           expect { game1.move(1, 2)}.to raise_error("Empty pile")
@@ -41,7 +41,7 @@ describe TOH do
       end
     end
 
-  end
+    end
 
     describe "#won?" do
 
